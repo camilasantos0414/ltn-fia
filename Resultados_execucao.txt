@@ -1,0 +1,186 @@
+Executando célula 1
+Instalação disponível. Se o ambiente pedir reinício, reinicie antes de continuar.
+
+Executando célula 2
+
+Executando célula 3
+Dispositivo: cpu
+
+Executando célula 4
+
+Executando célula 5
+
+Executando célula 6
+
+Executando célula 7
+
+Executando célula 8
+
+Executando célula 9
+
+Executando célula 10
+
+Executando célula 11
+
+Executando célula 12
+=== EXEMPLO DE RACIOCÍNIO LÓGICO LTN ===
+Knowledge base satisfaction level: 0.5198
+
+=== TRAINING PREDICATES ===
+Epoch 0: Satisfaction = 0.5198
+Epoch 20: Satisfaction = 0.6376
+Epoch 40: Satisfaction = 0.7692
+Epoch 60: Satisfaction = 0.8780
+Epoch 80: Satisfaction = 0.9432
+Knowledge base satisfaction level: 0.9713
+
+=== QUERYING KNOWLEDGE BASE ===
+Q1: Is the red ball red? A: 0.9848
+Q2: Is the blue cube round? A: 0.0413
+Q3: Are all balls round? A: 0.9546
+
+=== PRINCIPAIS INFORMAÇÕES SOBRE O LTNObjects ===
+1. LTNObjects encapsulam tensores com significado lógico.
+2. Constantes representam entidades específicas
+3. As variáveis representam conjuntos quantificáveis
+4. Os predicados mapeiam LTNObjects para valores de verdade [0,1]
+5. Os conectivos lógicos (E, Ou, Não, Implica) operam sobre valores de verdade.
+6. Os quantificadores (Forall, Exists) agregam sobre a variávels
+7. No LTNTorch, você deve definir explicitamente todos os conectivos lógicos.
+8. A função SatAgg combina múltiplos axiomas em uma única pontuação de satisfação.
+
+Executando célula 13
+
+==================================================
+EXTENSION: DIFFERENT FORMS OF EQUALITY IN LTN
+==================================================
+
+Executando célula 14
+
+Executando célula 15
+Experimento sobre igualdade: configuração concluída!
+
+------------------------------
+1. IGUALDADE DIAGONAL LTN
+------------------------------
+
+Executando célula 16
+
+Executando célula 17
+
+Executando célula 18
+
+Executando célula 19
+Testando a igualdade diagonal...
+Satisfação KB de igualdade diagonal: 0.7764
+P: Os dois objetos vermelhos são iguais? R: 0.9993
+P: Um objeto vermelho é igual a um objeto azul? R: 0.5000
+
+------------------------------
+2. IGUALDADE DE COSSENO.
+------------------------------
+
+Executando célula 20
+
+Executando célula 21
+Treinamento da Igualdade do Cosseno...
+Época 0: Satisfatibilidade da igualdade do cosseno = 0.6112, Temp = 1.1000
+Época 50: Satisfatibilidade da igualdade do cosseno = 0.6255, Temp = 1.5738
+Época 100: Satisfatibilidade da igualdade do cosseno = 0.6255, Temp = 1.5680
+Época 150: Satisfatibilidade da igualdade do cosseno = 0.6255, Temp = 1.5687
+Satisfatibilidade KB da Igualdade do Cosseno Final: 0.5793
+Q: Os dois objetos vermelhos são iguais (cosseno)? A: 0.8275
+Q: O objeto vermelho é igual ao objeto azul (cosseno)? A: 0.6866
+
+Executando célula 22
+
+------------------------------
+3. IGUALDADE EUCLIDIANA
+------------------------------
+
+Executando célula 23
+
+Executando célula 24
+Treinamento em Igualdade Euclidiana...
+Época 0: Satisfatibilidade da Igualdade Euclidiana = 0.8160, Gamma = 0.6000
+Época 30: Satisfatibilidade da Igualdade Euclidiana = 0.9903, Gamma = 2.2782
+Época 60: Satisfatibilidade da Igualdade Euclidiana = 0.9905, Gamma = 2.4738
+Época 90: Satisfatibilidade da Igualdade Euclidiana = 0.9905, Gamma = 2.4658
+Época 120: Satisfatibilidade da Igualdade Euclidiana = 0.9905, Gamma = 2.4479
+Satisfatibilidade final da igualdade euclidiana KB: 0.9917
+Q: Os dois objetos vermelhos são iguais (euclidianos)? A: 0.9879
+Q: O objeto vermelho é igual ao objeto azul (euclidiano)? A: 0.0076
+
+Executando célula 25
+
+------------------------------
+4. IGUALDADE DE VARIEDADES APRENDÍVEIS
+------------------------------
+
+Executando célula 26
+Treinaento da Rede de Igualdade aprodível...
+Epoch 0: Satisfatibilidade com a igualdade aprendível= 0.5410
+Epoch 50: Satisfatibilidade com a igualdade aprendível= 0.7959
+Epoch 100: Satisfatibilidade com a igualdade aprendível= 0.7959
+Epoch 150: Satisfatibilidade com a igualdade aprendível= 0.7959
+Epoch 200: Satisfatibilidade com a igualdade aprendível= 0.7959
+Epoch 250: Satisfatibilidade com a igualdade aprendível= 0.7959
+Satisfação final com a base de conhecimento sobre igualdade aprendível: 0.7113
+Q:Os dois objetos vermelhos são iguais (Aprendido)? A: 1.0000
+Q: O objeto vermelho é igual ao objeto azul (aprendido)? A: 0.0001
+Q: O objeto vermelho é igual a si mesmo (Aprendido)? A: 1.0000
+
+Executando célula 27
+Treino fixo: 45 pontos
+
+Executando célula 28
+
+Executando célula 29
+=== TREINAMENTO GEOMÉTRICO ===
+Época   0: satisfação = 0.5504
+Época 100: satisfação = 0.8992
+Época 200: satisfação = 0.9420
+Época 300: satisfação = 0.9568
+Época 400: satisfação = 0.9637
+Época 500: satisfação = 0.9677
+Época 600: satisfação = 0.9703
+Época 700: satisfação = 0.9723
+Época 799: satisfação = 0.9739
+
+Executando célula 30
+
+TREINO — acurácia das classes: 100.00%
+LeftOf: acurácia=99.65%; acurácia balanceada=99.65%
+Above: acurácia=99.65%; acurácia balanceada=99.65%
+Overlaps: acurácia=99.90%; acurácia balanceada=99.95%
+
+TESTE NOVO — acurácia das classes: 100.00%
+LeftOf: acurácia=99.86%; acurácia balanceada=99.86%
+Above: acurácia=99.73%; acurácia balanceada=99.73%
+Overlaps: acurácia=99.78%; acurácia balanceada=99.88%
+
+=== CONSULTAS LÓGICAS NO TESTE ===
+Círculos à esquerda de quadrados: 0.9998
+Triângulos acima de círculos: 0.9998
+Simetria de Overlaps: 0.9809
+Sem autorrelação: 0.9999
+Extra: quadrados não sobrepõem triângulos: 0.9998
+LeftOf direto (sem implicação): 0.9999
+Above direto (sem implicação): 0.9999
+1º ponto de teste é círculo: 0.9999
+
+=== PARES NOVOS EM TODO O PLANO [0,10]² ===
+LeftOf: acurácia=99.90%; balanceada=99.90%
+Above: acurácia=99.65%; balanceada=99.65%
+Overlaps: acurácia=99.80%; balanceada=99.89%
+
+=== EXEMPLOS POSITIVOS E NEGATIVOS DO TESTE ===
+LeftOf: A=[1.0330969095230103, 9.701559066772461], B=[7.419245719909668, 1.3593381643295288], esperado=1, rede=1.0000
+LeftOf: A=[7.980576038360596, 2.0110459327697754], B=[2.614088535308838, 4.791285514831543], esperado=0, rede=0.0000
+Above: A=[1.0330969095230103, 9.701559066772461], B=[7.419245719909668, 1.3593381643295288], esperado=1, rede=1.0000
+Above: A=[7.980576038360596, 2.0110459327697754], B=[2.614088535308838, 4.791285514831543], esperado=0, rede=0.0000
+Overlaps: A=[6.243668556213379, 3.6561203002929688], B=[5.637805938720703, 2.8043336868286133], esperado=1, rede=1.0000
+Overlaps: A=[1.0330969095230103, 9.701559066772461], B=[7.419245719909668, 1.3593381643295288], esperado=0, rede=0.0000
+
+Executando célula 31
+
